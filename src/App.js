@@ -1,14 +1,19 @@
+import ItemCount from "./components/ItemCount/ItemCount";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import NavBar from "./components/NavBar/NavBar";
 
-function App() {
+const App = () => {
+
+  const initial = 1
+  const max = 10
+
   return (
-  <div>
-    <h1>Paquetes de Clases</h1>
-    <NavBar />
-    <ItemListContainer greeting='¡Bienvenidx! A continuación verá el listado de clases disponibles.' descripcion=' Inserte texto de descripción.' />
-  </div> 
-  );
+    <div className='hooks-ap'>
+
+      <ItemCount initial={initial} max={max} />
+
+    </div>
+  )
 }
 
 export default App;
